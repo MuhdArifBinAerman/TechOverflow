@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using TechOverflow.Server.Models;
+using TechOverflow.Shared.Domain;
 
 namespace TechOverflow.Server.Data
 {
@@ -17,5 +18,17 @@ namespace TechOverflow.Server.Data
             IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
         {
         }
+
+
+        public DbSet<Staff> Staffs { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<ModPost> ModPosts { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<User> Users { get; set; }
+
+
+
     }
 }
