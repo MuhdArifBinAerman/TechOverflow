@@ -10,7 +10,7 @@ namespace TechOverflow.Shared.Domain
     {
         public int Id { get; set; }
         public String PName { get; set; }
-        public String PRetailPrice { get; set; }
+        public int PRetailPrice { get; set; }
         public String PBrand { get; set; }
         public String PDescription { get; set; }
         public int CatID { get; set; }
